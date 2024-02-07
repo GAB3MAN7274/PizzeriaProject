@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mark's Pizzeria Ordering App</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <h1>Mark's Pizzeria</h1>
+        <form>
+            <fieldset>
+                <legend>Customer</legend>
+                <div class="row">
+                    <div>
+                        <label for="firstname">First</label>
+                        <input id="firstname" name="first_name" type="text">
+                    </div>
+                    <div>
+                        <label for="lastname">Last</label>
+                        <input id="lastname" name="last_name" type="text"   >
+                    </div>
+                </div>
+            </fieldset>
+            <div class="row">
+                <fieldset>
+                    <legend>Pizza:</legend>
+                    <div>
+                        <input type="radio" id="deepdish" name="pizza's">
+                        <label for="deepdish">Deepdish</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="original" name="pizza's">
+                        <label for="original">Original</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="stuffedCrust" name="pizza's">
+                        <label for="stuffedCrust">Stuffed Crust</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Size:</legend>
+                    <div>
+                        <input type="radio" id="small" name="size">
+                        <label for="small">Small</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="medium" name="size">
+                        <label for="medium">Medium</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="large" name="size">
+                        <label for="large">Large</label>
+                    </div>
+                </fieldset>
+                <div>
+                    <fieldset>
+                        <legend>Toppings:</legend>
+                        <div>
+                            <input type="checkbox" id="pepperoni" name="pepperoni" value="pepperoni">
+                            <label for="pepperoni">Pepperoni</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="mushroom" name="mushroom" value="mushroom">
+                            <label for="mushroom">Mushrooms</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="sausage" name="sausage" value="sausage">
+                            <label for="sausage">Sausage</label>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <fieldset>
+                <legend>Type of cheese:</legend>
+                <div>
+                    <label form="container">Please Choose One</label>
+                    <select name="container" id="container">
+                        <option value="mozzarella">Mozzarella</option>
+                        <option value="pecorino romano">Pecorino romano</option>
+                        <option value="cheddar cheese">Cheddar Cheese</option>
+                        <option value="vegan cheese">Vegan cheese</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Special:</legend>
+                <div>
+                    <label for="SpecialRequests">Special Requests:</label>
+                    <textarea id="SpecialRequests" name="SpecialRequests" rows="4" cols="10"
+                              placeholder="Intolerance to cheese, substitutions, etc."></textarea>
+                </div>
+            </fieldset>
+                <button type="button" onclick="alert('Free today for our Grand Opening!')">Calculate Cost</button>
+                <button type="submit">Submit Order</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
